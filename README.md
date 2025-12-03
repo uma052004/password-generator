@@ -30,4 +30,4 @@ It allows users to generate strong and customizable passwords with a modern **gl
 | CSS (Glassmorphism + Neon Glow) | UI Design |
 | JavaScript | Logic & Interactivity |
 
-Live Demo : soft-begonia-5bbb30.netlify.app
+Live Demo : https://soft-begonia-5bbb30.netlify.app/
