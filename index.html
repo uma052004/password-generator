@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator 🔐</h2>
+
+        <div class="display-box">
+            <input type="text" id="passwordDisplay" readonly>
+            <span id="toggleEye" class="eye">👁️</span>
+            <button id="copyBtn">📋</button>
+        </div>
+
+        <p id="copyMsg"></p>
+
+        <div class="settings">
+            <label>Password Length: <span id="lengthValue">12</span></label>
+            <input type="range" id="lengthSlider" min="4" max="32" value="12">
+        </div>
+
+        <div class="checks">
+            <label><input type="checkbox" id="lowercase" checked> Lowercase (a-z)</label>
+            <label><input type="checkbox" id="uppercase" checked> Uppercase (A-Z)</label>
+            <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+            <label><input type="checkbox" id="symbols"> Symbols (!@#$)</label>
+        </div>
+
+        <button id="generateBtn" class="generate">Generate Password</button>
+
+        <div class="strength" id="strengthStatus">Strength: Medium</div>
+
+        <h3 class="history-title">🔁 Password History</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

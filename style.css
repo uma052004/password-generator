@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  width: 450px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+.display-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#passwordDisplay {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00eaff;
+  font-size: 19px;
+  padding-left: 5px;
+}
+
+.eye {
+  font-size: 22px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+#copyBtn {
+  border: none;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+#copyBtn:hover {
+  color: #00eaff;
+}
+
+#copyMsg {
+  height: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #00ffb3;
+}
+
+.settings {
+  margin: 15px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#lengthSlider {
+  width: 100%;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.checks label {
+  display: block;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.generate {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #00eaff;
+  color: #002b3f;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.generate:hover {
+  background: #00bacc;
+}
+
+.strength {
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.history-title {
+  margin-top: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+#historyList {
+  margin-top: 12px;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+#historyList li {
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  color: #00eaff;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#historyList li:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
